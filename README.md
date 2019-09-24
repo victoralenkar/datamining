@@ -174,3 +174,15 @@ Mineração caracterizada pela existência de um campo específico
 cujo valor deve ser estimado a partir dos valores dos demais 
 atributos.
 ```
+
+### Mineração de Dados Indireta
+
+> Através de uma técnica de mineração, extraem-se padrões significativos que 
+serão posteriormente avaliados.
+
+* Tarefas Descritivas: regras de associação, clusters.
+
+```
+O resultado da mineração complementa o conhecimento do especialista e deverá 
+ser examinado e avaliado por este.
+```
