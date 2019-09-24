@@ -124,3 +124,10 @@ a qual pertence um elemento, a partir de seus atributos.
 uma base de treinamento.
 
 ![Classificação](classificacao.png)
+
+### Agrupamento (Clustering)
+
+> Agrupar ("clusterizar") significa identificar um conjunto finito de categorias
+(ou grupos/clusters) que contêm objetos similares.
+
+*ATENÇÃO:* _Grupos não são previamente definidos!_
