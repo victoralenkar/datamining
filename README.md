@@ -135,3 +135,39 @@ uma base de treinamento.
 Exemplo:
 
 ![Clusterização](clusterizacao.png)
+
+### Técnicas de Mineração de Dados
+
+- Classificação
+	- Árvores de Decisão;
+	- k-NN;
+	- Classificador Bayesiano, etc.
+- Associação/Padrões
+	- Algoritmo de Extração de Regras de Associação/Padrões
+- Clusterização
+	- Algoritmos de Particionamento;
+	- Algoritmos Hierárquicos, etc.
+
+### Técnica Supervisionada vs Técnica Não Supervisionada
+
+**Supervisionado**: *Quando o atributo classe dos elementos da base de
+treinamento é conhecido, uma vez que tal classe foi informada a partir de
+uma ação externa (supervisionada).* Ex.: ***Classificação.***
+
+**Não Supervisionada**: *Quando os elementos da base de treinamento não possuem
+um atributo classe previamente informado, bem como ausência de separação em
+grupos (nem mesmo em quantidade de grupos).* Ex.: ***Clusterização.***
+
+### Modelo de Mineração de Dados
+
+![Modelo de Mineração](modelo.png)
+
+### Mineração de Dados Direta
+
+> Através de uma técnica de mineração, extrai-se ou treina-se um modelo que 
+> será posteriormente utilizado. 
+
+* Tarefas Preditivas: classificação, regressão.
+
+Mineração caracterizada pela existências de um campo específico cujo valor 
+deve ser estimado a partir dos valores dos demais atributos.
