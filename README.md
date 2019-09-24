@@ -254,3 +254,21 @@ de entropia. Utiliza-se de uma heurística que visa minimizar a quantidade de te
 necessários para classificar um registro.
 
 ![Fórmulas](formulasGanhoEntropia.png)
+
+### Medida Gain Ratio
+
+Um problema da medida Ganho de Informação é que atributos com muitos valores 
+são beneficiados. Caso extremo: atributo identificador (CPF).
+
+O algoritmo C4.5 tenta resolver esse problema com uma extensão da medida 
+Ganho de Informação, chamada Gain Ratio. Trata-se de um tipo de normalização 
+do Ganho de Informação.
+
+![Gain Ratio](gainRatio.png)
+
+### Medida Gini Index
+
+Utilizada pelo algoritmo CART, tem por objetivo medir o grau de impureza da 
+distribuição de classes da base D.
+
+![Gain Ratio](medidaGini.png)
