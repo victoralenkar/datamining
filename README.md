@@ -274,3 +274,18 @@ distribuição de classes da base D.
 ![Gini Index](medidaGini.png)
 
 ![Gini Index](giniIndex.png)
+
+## Aula 3: Random Forest
+
+### Características
+
+- Trata-se de um classificador composto por um comitê (ensemble) de N árvores de 
+decisão, onde N é um parâmetro de entrada da técnica. No momento da classificação,
+as árvores votam e a classe predominante será a classe da instância de entrada.
+- Seja D a base de treinamento, com d elementos. Cada árvore é construída a partir
+de uma amostra de D com reposição, de tamanho d. Portanto, algumas tuplas de D 
+podem aparecer mais de uma vez na amostra, enquanto outras podem não aparecer. 
+Aproximadamente 63,2% da base original ocorre em cada amostra.
+- A cada vez que um nó da árvore está sendo construído gera-se um subconjunto 
+aleatório dos atributos disponíveis, de tamanho F (outro parâmetro de entrada
+da técnica), e apenas esses atributos serão candidatos a rotular o nó corrente.
