@@ -50,7 +50,7 @@ realizada a busca por novas informações e conhecimento.
 * Limpeza de dados;
 * Enriquecimento dos dados;
 * Transformação dos dados,
-* _**Mineração dos dados**_; e
+* **Mineração dos dados**; e
 * Apresentação e análise dos resultados.
 
 ### Tarefas em mineração de dados
@@ -128,6 +128,6 @@ uma base de treinamento.
 ### Agrupamento (Clustering)
 
 > Agrupar ("clusterizar") significa identificar um conjunto finito de categorias
-(ou grupos/clusters) que contêm objetos similares.
+>(ou grupos/clusters) que contêm objetos similares.
 
-*ATENÇÃO:* _Grupos não são previamente definidos!_
+**ATENÇÃO:** Grupos não são previamente definidos!
