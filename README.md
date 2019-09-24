@@ -85,9 +85,9 @@ Transações:
 |4| cerveja, fralda, leite, pão|
 |5| fralda, leite, refrigerante|
 
-RAs:
+RAs: \{A} => \{B}
 
-| RA | Confiança | Suporte |
+| RA | Confiança (A&B)/A | Suporte (A&B)/Total |
 |:--:|:---------:|:-------:|
 |\{fralda} => \{cerveja}|66% (2/3)|médio (2/5)|
 |\{fralda} => \{leite}|100% (1/1)|alto (3/5)|
