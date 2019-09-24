@@ -235,3 +235,22 @@ Y = 3/13, onde 3 é a # da regra amarela e 13 é o total de tuplas.
 ```
 
 **ATENÇÃO:** O erro é calculado sobre os dados de _treinamento_!
+
+### Algoritmos ID3, C4.5 e CART
+
+Estrutura comum aos algoritmos:
+
+- Entrada:
+	- Base de treinamento;
+	- Lista de atributos independentes; e
+	- Definição do atributo dependente (alvo ou objetivo).
+- Saída:
+	- AD que permite classificar um novo registro a partir de seus atributos independentes.
+	
+### Como gerar a melhor AD? Como escolher os atributos/nós?
+
+O algoritmo ID3 utiliza medida de Ganho de Informação, que se baseia no conceito
+de entropia. Utiliza-se de uma heurística que visa minimizar a quantidade de testes
+necessários para classificar um registro.
+
+	
