@@ -120,7 +120,7 @@ Padrão de Sequência: {(leite)(queijo, manteiga)}
 a qual pertence um elemento, a partir de seus atributos.
 
 * Em última análise é uma função que realiza tal mapeamento; 
-* A função é descoberta a partir de um modelo de função/técnica (escolhido) e 
+* A função é descoberta a partir de um modelo de função/técnica (escolhida) e 
 uma base de treinamento.
 
 ![Classificação](classificacao.png)
