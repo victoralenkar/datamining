@@ -271,4 +271,6 @@ do Ganho de Informação.
 Utilizada pelo algoritmo CART, tem por objetivo medir o grau de impureza da 
 distribuição de classes da base D.
 
-![Gain Ratio](medidaGini.png)
+![Gini Index](medidaGini.png)
+
+![Gini Index](giniIndex.png)
