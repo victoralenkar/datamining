@@ -289,3 +289,10 @@ Aproximadamente 63,2% da base original ocorre em cada amostra.
 - A cada vez que um nó da árvore está sendo construído gera-se um subconjunto 
 aleatório dos atributos disponíveis, de tamanho F (outro parâmetro de entrada
 da técnica), e apenas esses atributos serão candidatos a rotular o nó corrente.
+
+**ATENÇÃO**: Em caso de regressão, a saída é a média dos valores de saída das árvores.
+
+### Desvangatens
+
+* Bons resultados para classificação, mas não tão bons para regressão; e
+* Como se trata de várias árvores, perde-se a intuitividade do modelo.
