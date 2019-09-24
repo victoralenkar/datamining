@@ -217,3 +217,21 @@ haja um e apenas um caminho da raiz até a folha.
 (Sal > 5k) ∧ (Idade ≤ 40) ∧ (TEmpr = Indústria) ⇒ Classe = B
 (Sal > 5k) ∧ (Idade ≤ 40) ∧ (TEmpr = Academia) ⇒ Classe = B
 ```
+
+### Taxa de Erro de Treinamento de Regras
+
+![Taxa de Erro de Treinamento de Regras](erroRegra.png)
+
+### Taxa de Erro Total ou Erro de Treinamento
+
+> A taxa de erro total de uma AD equivale à soma ponderada das taxas de erro 
+de cada folha, considerando-se a probabilidade associada a esta folha.
+
+Exemplo:
+```
+Erro Total = 0,25 * X + 0,33 * Y, onde:
+X = 4/13, onde 4 é a # da regra verde e 13 é o total de tuplas.
+Y = 3/13, onde 3 é a # da regra amarela e 13 é o total de tuplas.
+```
+
+**ATENÇÃO:** O erro é calculado sobre os dados de _treinamento_!
