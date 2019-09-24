@@ -131,3 +131,7 @@ uma base de treinamento.
 >(ou grupos/clusters) que contêm objetos similares.
 
 **ATENÇÃO:** Grupos não são previamente definidos!
+
+Exemplo:
+
+![Clusterização](clusterizacao.png)
