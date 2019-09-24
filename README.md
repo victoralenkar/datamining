@@ -167,7 +167,7 @@ grupos (nem mesmo em quantidade de grupos).* Ex.: ***Clusterização.***
 > Através de uma técnica de mineração, extrai-se ou treina-se um modelo que 
 > será posteriormente utilizado. 
 
-* Tarefas Preditivas: classificação, regressão.
+* Tarefas Preditivas: classificação, regressão, etc.
 
 ```
 Mineração caracterizada pela existência de um campo específico 
@@ -180,7 +180,7 @@ atributos.
 > Através de uma técnica de mineração, extraem-se padrões significativos que 
 serão posteriormente avaliados.
 
-* Tarefas Descritivas: regras de associação, clusters.
+* Tarefas Descritivas: regras de associação, clusters, etc.
 
 ```
 O resultado da mineração complementa o conhecimento do especialista e deverá 
