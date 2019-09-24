@@ -169,5 +169,8 @@ grupos (nem mesmo em quantidade de grupos).* Ex.: ***Clusterização.***
 
 * Tarefas Preditivas: classificação, regressão.
 
-Mineração caracterizada pela existências de um campo específico cujo valor 
-deve ser estimado a partir dos valores dos demais atributos.
+```
+Mineração caracterizada pela existência de um campo específico 
+cujo valor deve ser estimado a partir dos valores dos demais 
+atributos.
+```
