@@ -111,7 +111,7 @@ Exemplo:
 |Marcos|08.08.2001/18:30|leite, manteiga|
 
 ```
-Padrão de Sequência: {(leite)(queijo,manteiga)}
+Padrão de Sequência: {(leite)(queijo, manteiga)}
 ```
 
 ### Classificação
@@ -120,7 +120,7 @@ Padrão de Sequência: {(leite)(queijo,manteiga)}
 a qual pertence um elemento, a partir de seus atributos.
 
 * Em última análise é uma função que realiza tal mapeamento; 
-* A função é descoberta a partir de um modelo de função (escolhido) e uma base 
-de treinamento.
+* A função é descoberta a partir de um modelo de função/técnica (escolhido) e 
+uma base de treinamento.
 
 ![Classificação](classificacao.png)
