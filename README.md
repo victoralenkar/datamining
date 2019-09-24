@@ -186,3 +186,34 @@ serão posteriormente avaliados.
 O resultado da mineração complementa o conhecimento do especialista e deverá 
 ser examinado e avaliado por este.
 ```
+
+## Aula 2: Árvore de Decisão (Classificação)
+
+### Conceito de Classificação
+
+> Identificar a classe a qual um elemento pertence a partir de suas características.
+O conjunto de possíveis classes é discreto e predefinido.
+
+Exemplo:
+
+![Classificação](classificacao.png)
+
+Características:
+
+![Árvore de Decisão](arvoreDecisao.png)
+
+### Regras de Classificação
+
+> Cada caminho da raiz até a folha representa uma regra, definida como a conjunção
+das condições percorridas, implicando no valor da classe encontrada na folha.
+
+**ATENÇÃO:** A árvore deve ser definida de forma que, para um mesmo registro, 
+haja um e apenas um caminho da raiz até a folha.
+
+```
+(Sal ≤ 5k) ⇒ Classe = B
+(Sal > 5k) ∧ (Idade > 40) ⇒ Classe = C
+(Sal > 5k) ∧ (Idade ≤ 40) ∧ (TEmpr = Autônomo) ⇒ Classe = A
+(Sal > 5k) ∧ (Idade ≤ 40) ∧ (TEmpr = Indústria) ⇒ Classe = B
+(Sal > 5k) ∧ (Idade ≤ 40) ∧ (TEmpr = Academia) ⇒ Classe = B
+```
