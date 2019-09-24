@@ -253,4 +253,4 @@ O algoritmo ID3 utiliza medida de Ganho de Informação, que se baseia no concei
 de entropia. Utiliza-se de uma heurística que visa minimizar a quantidade de testes
 necessários para classificar um registro.
 
-	
+![Fórmulas](formulasGanhoEntropia.png)
