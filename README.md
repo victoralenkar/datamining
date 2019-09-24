@@ -89,7 +89,38 @@ RAs:
 
 | RA | Confiança | Suporte |
 |:--:|:---------:|:-------:|
-|\{fralda} => \{cerveja}|66%|médio|
-|\{fralda} => \{leite}|100%|alto|
-|\{leite} => \{fralda}|75%|alto|
-|\{carne} => \{cerveja}|100%|baixo|
+|\{fralda} => \{cerveja}|66% (2/3)|médio (2/5)|
+|\{fralda} => \{leite}|100% (1/1)|alto (3/5)|
+|\{leite} => \{fralda}|75% (3/4)|alto (3/5)|
+|\{carne} => \{cerveja}|100%(1/1)|baixo (1/5)|
+
+### Padrões de Sequências
+
+> Padrões de Sequência representam sequências de conjuntos de itens que ocorrem
+nas transações de diferentes consumidores, com determinada frequência (em ordem).
+
+Exemplo:
+
+|Consumidor|Data/Hora|Produtos|
+|:--:|:---------:|:-------:|
+|João|01.08.2001/17:01|leite, pão|
+|João|03.08.2001/14:25|carne, cerveja|
+|João|10.08.2001/21:15|queijo, manteiga, sal|
+|-|-|-|
+|Marcos|05.08.2001/10:16|leite, ovos|
+|Marcos|08.08.2001/18:30|leite, manteiga|
+
+```
+Padrão de Sequência: {(leite)(queijo,manteiga)}
+```
+
+### Classificação
+
+> Um classificador estima/prevê, entre um conjunto pré-definido de classes, aquela
+a qual pertence um elemento, a partir de seus atributos.
+
+* Em última análise é uma função que realiza tal mapeamento; 
+* A função é descoberta a partir de um modelo de função (escolhido) e uma base 
+de treinamento.
+
+![Classificação](classificacao.png)
