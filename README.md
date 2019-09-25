@@ -296,3 +296,27 @@ da técnica), e apenas esses atributos serão candidatos a rotular o nó corrent
 
 * Bons resultados para classificação, mas não tão bons para regressão; e
 * Como se trata de várias árvores, perde-se a intuitividade do modelo.
+
+## Aula 4: k-NN (k Nearest Neighbor)
+
+### Características
+
+* Classificador k-NN (k-Nearest Neighbor) se baseia na ideia
+de aprendizagem por analogia. A classe de uma tupla de
+entrada será determinada pelo conhecimento das classes de
+tuplas similares da base de treinamento.
+
+* Cada tupla possui n atributos e, portanto, pode ser
+caracterizada por um ponto em um espaço n-dimensional.
+
+* A técnica procura pelas k tuplas de treinamento mais
+próximas à tupla a ser classificada no espaço n-dimensional.
+Essas tuplas serão os k vizinhos mais próximos.
+
+**Depois de identificados os k vizinhos mais próximos da tupla t de entrada 
+a ser classificada, o k-NN atribui a t a classe predominante entre esses k 
+vizinhos.**
+
+![k-NN, k=3](knn3.png)
+
+*IMPORTANTE:* Em geral escolhem-se valores ímpares de k para evitar empates.
