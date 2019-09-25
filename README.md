@@ -320,3 +320,9 @@ vizinhos.*
 ![k-NN, k=3](knn3.png)
 
 **IMPORTANTE:** Em geral escolhem-se valores ímpares de k para evitar empates.
+
+### Cálulo de Proximidade / Semelhança
+
+> A proximidade ou semelhança é definida a partir de uma métrica de
+
+$$c^2$$
