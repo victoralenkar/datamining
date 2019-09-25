@@ -439,3 +439,10 @@ maximizar o numerador:
 ```
 P(Ci | X) α P(X |Ci) ⋅ P(Ci)
 ```
+
+**ATENÇÃO:** Dado o valor da classe, os valores dos atributos são tomados por
+*condicionalmente independente entre si*. Assim:
+
+Se A e B são independentes: P(A|B) = P(A), e:
+
+Se A e B são independentes dado C: P(A|B∧C) = P(A|C).
