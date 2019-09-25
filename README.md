@@ -323,6 +323,12 @@ vizinhos.*
 
 ### Cálulo de Proximidade / Semelhança
 
-> A proximidade ou semelhança é definida a partir de uma métrica de
+> A proximidade ou semelhança é definida a partir de uma métrica de distância,
+como a distância euclidiana.
 
-$$c^2$$
+![Distância Euclidiana](distEuclid.png)
+
+*Quanto menor o dist, mais próximas são as tuplas da entrada da função.*
+
+**ATENÇÃO:** Os atributos devem ser numéricos e portanto convertidos em números
+quando necessário.
