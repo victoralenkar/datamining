@@ -324,7 +324,8 @@ vizinhos.*
 ### Cálculo de Proximidade / Semelhança
 
 > A proximidade ou semelhança é definida a partir de uma métrica de distância,
-como a distância euclidiana.
+como a distância euclidiana. Outras função de distância podem ser utilizadas: distância
+de manhanttan, distância minkowski, etc.
 
 ![Distância Euclidiana](distEuclid.png)
 
