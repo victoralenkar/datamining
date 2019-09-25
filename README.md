@@ -321,7 +321,7 @@ vizinhos.*
 
 **IMPORTANTE:** Em geral escolhem-se valores ímpares de k para evitar empates.
 
-### Cálulo de Proximidade / Semelhança
+### Cálculo de Proximidade / Semelhança
 
 > A proximidade ou semelhança é definida a partir de uma métrica de distância,
 como a distância euclidiana.
@@ -332,3 +332,13 @@ como a distância euclidiana.
 
 **ATENÇÃO:** Os atributos devem ser numéricos e portanto convertidos em números
 quando necessário.
+
+### Normalização dos atributos
+
+* É importante que os atributos sejam normalizados para evitar que atributos
+diferentes contribuam de forma diferente no cálculo da distância.
+
+* Normalização min-max transforma o valor v de um atributo em um valor v' no
+intervalo [0,1]:
+
+![Normalização min-max](minMax.png)
