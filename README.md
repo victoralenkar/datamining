@@ -313,10 +313,10 @@ caracterizada por um ponto em um espaço n-dimensional.
 próximas à tupla a ser classificada no espaço n-dimensional.
 Essas tuplas serão os k vizinhos mais próximos.
 
-**Depois de identificados os k vizinhos mais próximos da tupla t de entrada 
+*Depois de identificados os k vizinhos mais próximos da tupla t de entrada 
 a ser classificada, o k-NN atribui a t a classe predominante entre esses k 
-vizinhos.**
+vizinhos.*
 
 ![k-NN, k=3](knn3.png)
 
-*IMPORTANTE:* Em geral escolhem-se valores ímpares de k para evitar empates.
+**IMPORTANTE:** Em geral escolhem-se valores ímpares de k para evitar empates.
