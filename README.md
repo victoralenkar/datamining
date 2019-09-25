@@ -343,3 +343,31 @@ diferentes contribuam de forma diferente no cálculo da distância.
 intervalo [0,1]:
 
 ![Normalização min-max](minMax.png)
+
+### Atributos categóricos
+
+* Em geral, possuem distância zero quando são idênticos e 1 quando são distintos; e
+
+* Valores intermediários entre 0 e 1 podem ser adotados para representar a intensidade
+da diferença.
+
+### Performance do k-NN
+
+* De uma forma geral, o k-NN apresenta um alto custo computacional para classificar 
+uma nova tupla t, pois tem que calcular a distância de t para todas as tuplas da
+base;
+
+* Por necessitar de toda a base no momento da classificação é considerado um classificador
+preguiçoso; e
+
+* Por outro lado, a atualização da base é automaticamente refletida no classificador.
+
+### k-NN e Regressão
+
+Nesse caso, o método de regressão retorna a média dos valores do atributo 
+(alvo) numérico dos k vizinhos mais próximos.
+
+```
+Por exemplo, para estimar o valor de venda de um imóvel, calcula-se a média 
+dos valores de venda dos k imóveis mais semelhantes ao imóvel de entrada.
+```
