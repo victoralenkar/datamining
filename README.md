@@ -446,3 +446,28 @@ P(Ci | X) α P(X |Ci) ⋅ P(Ci)
 Se A e B são independentes: P(A|B) = P(A), e:
 
 Se A e B são independentes dado C: P(A|B∧C) = P(A|C).
+
+Finalmente:
+```
+P(X | Ci) = P(X1 | Ci) . P(X2 | Ci) . ... . P(Xn | Ci), onde:
+X = {X1, X2, ..., Xn}, são os atributos de X.
+```
+
+### Correção de Laplace
+
+Como P(X | Ci) se trata de um produtório, qualquer probabilidade zero 
+pode zerar o resultado geral. Assim aplica-se a correção de laplace:
+
+Suponha que para a classe buys-computer=yes,
+em uma base de treinamento de 1000 tuplas,
+tem-se 0 tuplas com age<=30, 990 tuplas com age=31..40,
+e 10 tuplas com age>40.
+
+Adiciona-se uma tupla com a classe buys-computer=yes
+para cada valor distinto do atributo age.
+
+Dessa forma, as probabilidades que seriam:
+0/1000=zero; 990/1000=0,990 e 10/1000=0,010;
+
+passam a ser:
+1/1003=0,001; 991/1003=0,988 e 11/1003=0,011.
