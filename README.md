@@ -392,7 +392,7 @@ dos valores de venda dos k imóveis mais semelhantes ao imóvel de entrada.
 
 ## Aula 5: Naive Bayes
 
-## Características
+### Características
 
 * Classificadores Bayesianos são classificadores
 estatísticos, que se baseiam no Teorema de Bayes.
@@ -404,3 +404,38 @@ das classes.
 * Naive Bayes é o mais popular classificador Bayesiano
 e apresenta resultados competitivos em termos de
 acurácia e tempo de processamento.
+
+### Formulação do modelo
+
+* O classificador Naive Bayes calcula a probabilidade a posteriori
+P(Ci | X), probabilidade de X ser da classe Ci considerando os
+valores dos atributos de X (para cada classe Ci);
+
+* O classificador decide que X é da classe Ci se e somente se
+P(Ci | X) for maior do que P(Cj | X) para qualquer outra classe Cj,
+ou seja, X é da classe Ci se e somente se:
+	* P(Ci | X) > P(Cj | X) para todo 1 ≤ j ≤ m, j ≠ i
+
+A probabilidade *a posteriori* P(Ci | X) é:
+
+```
+P(Ci | X) = P(Ci ∧ X) / P(X)
+```
+
+Entretanto, não se consegue estimar P(Ci ∧ X) a partir da base, pois é 
+grande a chance de não haver outros elementos com as características de
+X e da classe Ci.
+
+### Teorema de Bayes
+
+ A probabilidade a posteriori P(Ci | X) será calculada a partir do
+Teorema de Bayes:
+```
+P(Ci | X) = P(X |Ci) ⋅ P(Ci) / P(X)
+```
+
+* Como P(X) é constante para todas as classes, basta
+maximizar o numerador:
+```
+P(Ci | X) α P(X |Ci) ⋅ P(Ci)
+```
