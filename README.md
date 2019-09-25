@@ -371,3 +371,36 @@ Nesse caso, o método de regressão retorna a média dos valores do atributo
 Por exemplo, para estimar o valor de venda de um imóvel, calcula-se a média 
 dos valores de venda dos k imóveis mais semelhantes ao imóvel de entrada.
 ```
+
+### Classificador Eager vs Lazy
+
+- Eager:
+	- o modelo é construído previamente;
+	- classifica rapidamente a tupla de entrada;
+	- necessita retreinar o modelo em caso de atualização da base;
+	- exemplo: árvores de decisão.
+
+![Distância Euclidiana](eager.png)
+
+- Lazy:
+	- não há construção de modelos;
+	- custo computacional mais caro para classificar a tupla de entrada;
+	- não necessita retreinar o modelo em caso de atualização da base;
+	- exemplo: k-NN.
+	
+![Distância Euclidiana](lazy.png)
+
+## Aula 5: Naive Bayes
+
+## Características
+
+* Classificadores Bayesianos são classificadores
+estatísticos, que se baseiam no Teorema de Bayes.
+
+* Trabalham com a idéia de calcular a probabilidade
+de uma instância de entrada pertencer a cada uma
+das classes.
+
+* Naive Bayes é o mais popular classificador Bayesiano
+e apresenta resultados competitivos em termos de
+acurácia e tempo de processamento.
