@@ -884,3 +884,25 @@ medóides de seus respectivos clusters.
 - Bom para bases com ruídos;
 - Adequado para identificar clusters de formato arbitrário;
 - Trabalha com dois parâmetros: raio e densidade.
+
+Exemplo:
+
+Varrendo grupo verde...
+
+![DBSCAN](dbscan1.png)
+
+Finalização do grupo verde. Circunferência não encontra novos elementos.
+
+Enquanto encontrar elementos dentro do centro da circunferencia que satisfaçam
+a densidade, ele classifica como pertencendo ao grupo, caso contrário, inicia-se
+o processo para o próximo grupo...
+
+![DBSCAN](dbscan2.png)
+
+### Vantagens de algoritmos de clusterização
+
+- Escalabilidade;
+- Aceitar diferentes tipos de dados;
+- Identificar cluster de diferentes formatos;
+- Poucos parâmetros de entrada; e
+- Tratamento de ruídos.
