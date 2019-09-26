@@ -546,3 +546,28 @@ Caso geral:
 Em caso de classe binária:
 
 ![Matriz de Confusão](binario.png)
+
+### Métricas de Confusão
+
+**Precision**: Fração dos elementos classificados como positivos que são
+realmente positivos.
+```
+Precision = TP / (TP + FP)
+```
+Ex.: De todos classificados como SPAM, quantos eram realmente SPAM.
+
+**Recall (Ou Sensitivity)**: Fração dos elementos positivos que foram classificados como
+positivos.
+```
+Recall = TP / (TP + FN)
+```
+Ex.: De todos os SPAMS, quantos foram classificados como SPAM.
+
+**F-Measure (Média Harmônica)**: Quanto maior, maior a qualidade do precision e recall.
+```
+F-Measure = 2.Pr.Rc / (Pr+Rc)
+```
+
+### ROC Curve
+
+![Matriz de Confusão](roc.png)
