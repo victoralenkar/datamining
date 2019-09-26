@@ -809,3 +809,45 @@ candidatos, apenas os frequentes passem à iteração seguinte;
 todos os frequentes locais (candidatos globais), identificados em cada partição. 
 Este fato, dependendo do número de candidatos gerados que não são de fato 
 frequentes, pode comprometer o desempenho deste algoritmo.
+
+## Aula 10: Clusterização
+
+> Clusterização é a tarefa de identificar um conjunto finito de categorias 
+(ou grupos - clusters) que contêm objetos similares.
+
+*Grupos não são previamente definidos.*
+
+**ATENÇÃO:** Trata-se de aprendizado não supervisionado, pois os elementos
+da base de entrada não possuem grupo definido. Nem mesmo o número de grupos.
+
+Exemplo:
+
+![Clusterização](exemploClusterizacao.png)
+
+### Algoritmos de clusterização
+
+* Algoritmos de clusterização organizam um conjunto de n objetos em 
+(k) clusters (grupos) de objetos semelhantes.
+
+* Em um cluster, objetos devem ser similares entre si e dissimilares
+(diferentes, distantes) em relação a objetos de outros clusters;
+
+* O número k de clusters a serem obtidos pode não ser um dados de entrada.
+
+* Exemplos de algoritmos: 
+	* k-means;
+	* k-medoids;
+	* dbscan, etc.
+
+### K-Means
+
+> Associa iterativamente os dados a k centros (centroids) até que os k centros
+possuam elementos associados com o valor médio dos elementos de cada cluster.
+
+Exemplo considerando k=5:
+
+![1ª Iteração](1ite.png)
+
+Após a décima iteração:
+
+![10ª Iteração](10ite.png)
