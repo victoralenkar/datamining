@@ -618,3 +618,38 @@ em relação às transações que incluem o antecedente.
 *Representa a probabilidade do consequente acontecer
 dado que o antecedente aconteceu.*
 
+### Mineração de Regras de Associação
+
+- Entrada:
+	- Base de dados de transações;
+	- Suporte mínimo; e
+	- Confiança mínima.
+- Saída:
+	- Todas as RA que satisfazem os requisitos mínimos de suporte e confiança.
+	
+Exemplo:
+
+![Exemplo de mineração de RA](exemploMineracao.png)
+
+### Regras de Associação em Taxonomias
+
+Regras de Associação podem ser indicadas em taxonomias, exemplo:
+
+Considere a taxanomia abaixo:
+
+![Taxonomia](taxonomia.png)
+
+Acrescentando-se RA:
+
+![Taxonomia com RA](taxRA.png)
+
+É possível que as duas regras a seguir não tenham o suporte desejado.
+```
+{calça-social} => {sandália}
+{calça-social} => {sapato}
+```
+
+Porém, a regra envolvendo a generalização calçado-social pode ser relevante.
+```
+{calça-social} => {calçado-social}
+```
