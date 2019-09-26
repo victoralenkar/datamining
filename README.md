@@ -841,8 +841,15 @@ Exemplo:
 
 ### K-Means
 
-> Associa iterativamente os dados a k centros (centroids) até que os k centros
-possuam elementos associados com o valor médio dos elementos de cada cluster.
+> Associa iterativamente os dados a k centros (centroids) até a soma das
+distâncias quadráticas entre os objetos e os centróides de seus respectivos 
+clusters seja minimizada.
+
+![](somaDosErros.png)
+
+O algoritmo pára quando as distâncias se estabilizam de uma iteração para outra.
+
+**ATENÇÃO:** A primeira iteração define os centros aleatoriamente.
 
 Exemplo considerando k=5:
 
@@ -851,3 +858,29 @@ Exemplo considerando k=5:
 Após a décima iteração:
 
 ![10ª Iteração](10ite.png)
+
+### Desvantagens do K-Means
+
+* Não adequado para identificar clusters de forma não convexa;
+
+* Não trabalha bem com ruídos;
+
+![Tipos de amostras](exs.png)
+
+### K-Medoids
+
+> Semelhante ao K-means, porém o representante de cada cluster não será a "média"
+dos pontos do cluster, mas sim um dos pontos pertencente ao cluster.
+
+- A escolha dos medóides deve minimizar as distâncias entre os objetos e os 
+medóides de seus respectivos clusters.
+
+**Mais adequado para bases com ruídos.**
+
+### DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+
+- Método baseado em densidade;
+- O número de clusters não é um parâmetro de entrada;
+- Bom para bases com ruídos;
+- Adequado para identificar clusters de formato arbitrário;
+- Trabalha com dois parâmetros: raio e densidade.
