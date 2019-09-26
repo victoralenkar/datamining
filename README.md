@@ -472,7 +472,7 @@ Dessa forma, as probabilidades que seriam:
 passam a ser:
 1/1003=0,001; 991/1003=0,988 e 11/1003=0,011.
 
-## Aula 7: Avaliação de Classificadores
+## Aula 6: Avaliação de Classificadores
 
 ### Procedimentos Básicos
 
@@ -676,7 +676,7 @@ entre 20 e 30 anos, do sexo masculino têm C% de chance de serem usuários de dr
 
 ### Meta-Regras
 
-- Permitem a especificação do tipo de regras que se deseja minerar;
+- Permitem a especificação do tipo de regra que se deseja minerar;
 - Podem funcionar como restrições definidas pelo usuário; e
 - Podem representar hipóteses a serem confirmadas.
 
@@ -689,3 +689,54 @@ Uma possível regra minerada:
 ```
 age(X,[30,39]) ∧ income(X,[41K,60K]) ⇒ buys(X,"educational software")
 ```
+
+## Aula 9: Medidas de Interesse
+
+### Modelo Suporte / Confiança
+
+* O número de regras gerado costuma ser extremamente volumoso. Identificar as 
+regras realmente úteis e interessantes torna-se uma tarefa difícil.
+
+* O modelo gera regras redundantes, ilusórias ou até mesmo contraditórias.
+
+Exemplo de análise de dependência:
+
+![Análise de Dependência](independencia.png)
+
+### Lift
+
+> Indica o quanto mais frequente torna-se o consequente quando o antecedente ocorre.
+```
+Lift(A => B) = Conf (A => B) / Sup(B)
+```
+
+Conf (A => B) = Sup(A U B) / Sup(A)
+
+Lift(A => B) = (Sup(A U B) / Sup(A)) / Sup(B)
+
+```
+Lift(A => B) = Sup(A U B) / Sup(A) x Sup(B)
+```
+
+Sup(A U B): Suporte real de A ∧ B
+
+Sup(A) x Sup(B): Suporte esperado de A ∧ B
+
+### Rule Interest ou Leverage
+
+> Diferença entre o suporte real e o suporte esperado da regra:
+
+```
+RI(A => B) = Sup(A U B) – (Sup(A) x Sup(B))
+```
+
+### Conviction
+
+> Indica o quanto menos frequente torna-se o inverso do consequente quando o
+antecedente ocorre.
+```
+Conv(A => B) = Sup(-B) / Conf(A => -B)
+```
+
+Se o valor de Conv for alto, indica que a ocorrência de A diminui a chance 
+de –B acontecer, ou seja, aumenta a chance de B acontecer.
