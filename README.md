@@ -673,3 +673,19 @@ Exemplo:
 
 Esta regra indica, com confiança C, que pacientes portadores do HIV, heterossexuais,
 entre 20 e 30 anos, do sexo masculino têm C% de chance de serem usuários de drogas.
+
+### Meta-Regras
+
+- Permitem a especificação do tipo de regras que se deseja minerar;
+- Podem funcionar como restrições definidas pelo usuário; e
+- Podem representar hipóteses a serem confirmadas.
+
+Exemplo:
+```
+P1(X,Y) ∧ P2(X,Z) ⇒ buys(X,“educational software”)
+```
+
+Uma possível regra minerada:
+```
+age(X,[30,39]) ∧ income(X,[41K,60K]) ⇒ buys(X,"educational software")
+```
