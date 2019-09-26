@@ -781,3 +781,31 @@ Exemplo:
 Fase de junção, seguida da fase de poda do *Apriori*:
 
 ![Estratégia Apriori](juncaoPoda.png)
+
+### Estratégia Partition
+
+> A estratégia Partition é dividida em duas fases: na primeira, são gerados os
+conjuntos candidatos e, na segunda, dentre estes são identificados os frequentes.
+Em cada fase é realizada (apenas) uma leitura em toda a base de dados.
+- Fase I:
+	- A base de dados é dividida em partições que caibam na memória
+principal. Para cada partição, são gerados os conjuntos frequentes locais,
+utilizando-se as idéias da estratégia Apriori.
+	- Desta forma, em um único acesso a toda a base de dados, os conjuntos
+frequentes locais de cada partição são gerados. Estes conjuntos são
+os candidatos a frequentes globais.
+- Fase II:
+	- Todas as transações da base de dados são percorridas para verificar
+quais frequentes locais (candidatos globais) são frequentes globais.
+
+### Partition vs *Apriori*
+
+- Na estratégia Partition, a base de dados é lida apenas duas vezes. Na 
+estratégia Apriori, a base de dados é lida em cada uma das k iterações;
+- Se, por um lado, a estratégia Apriori realiza um número maior de leituras 
+à base de dados, estas várias leituras permitem que, dentre os conjuntos 
+candidatos, apenas os frequentes passem à iteração seguinte;
+- Na estratégia Partition, passam para a última fase e devem ser processados 
+todos os frequentes locais (candidatos globais), identificados em cada partição. 
+Este fato, dependendo do número de candidatos gerados que não são de fato 
+frequentes, pode comprometer o desempenho deste algoritmo.
