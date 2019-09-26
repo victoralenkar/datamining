@@ -568,6 +568,17 @@ Ex.: De todos os SPAMS, quantos foram classificados como SPAM.
 F-Measure = 2.Pr.Rc / (Pr+Rc)
 ```
 
-### ROC Curve
+### ROC (Receiver Operating Characteristics) Curve
 
-![Matriz de Confusão](roc.png)
+Curva que visa sintetizar as várias matrizes de confusão de uma análise com vários
+thresholds (pontos de corte). Quanto mais alto um ponto da curva, maior sua taxa
+de TP e quanto mais à esquerda for o ponto da curva, menor sua taxa FP. A diagonal
+do meio representa pontos onde a taxa de TP é igual à de FP.
+
+![ROC](roc.png)
+
+### AUC (Area Under the Curve)
+
+Área utilizada para comparar diferentes ROC Curves:
+
+![AUC](auc.png)
