@@ -583,7 +583,7 @@ do meio representa pontos onde a taxa de TP é igual à de FP.
 
 ![AUC](auc.png)
 
-## Aula 8: Regras de Associação
+## Aula 7: Regras de Associação
 
 ### Definição
 
@@ -690,7 +690,7 @@ Uma possível regra minerada:
 age(X,[30,39]) ∧ income(X,[41K,60K]) ⇒ buys(X,"educational software")
 ```
 
-## Aula 9: Medidas de Interesse
+## Aula 8: Medidas de Interesse
 
 ### Modelo Suporte / Confiança
 
@@ -740,3 +740,44 @@ Conv(A => B) = Sup(-B) / Conf(A => -B)
 
 Se o valor de Conv for alto, indica que a ocorrência de A diminui a chance 
 de –B acontecer, ou seja, aumenta a chance de B acontecer.
+
+## Aula 9: Algoritmos de Mineração de RAs
+
+> Um algoritmo é dito escalável se, dada uma quantidade fixa de memória principal,
+seu tempo de execução cresce linearmente com o número de registros da base de dados.
+
+### Mineração de Regras de Associação
+
+- Fase 1: Encontrar cada conjunto frequente Z (Sup(Z) ≥ SupMin);
+- Fase 2: Para cada conjunto frequente Z (de tamanho maior ou igual a 2),
+identificar seus possíveis subconjuntos X e Y, de tal forma que:
+```
+Z = X∪Y e Conf(X⇒Y) ≥ ConfMin.
+```
+
+-	Fase 1: Identificação dos conjuntos frequentes:
+	- É a fase computacionalmente cara;
+	- Para um conjunto de itens de tamanho n, existem 2^n possíveis subconjuntos 
+frequentes;
+	- Dois algoritmos básicos propostos para esta fase:
+		- Apriori; e
+		- Partition.
+
+### Estratégia *Apriori*
+
+> O algoritmo Apriori considera as seguintes propriedades com o objetivo de 
+diminuir o espaço de busca, ou seja, evitar que todos os 2n subconjuntos sejam 
+avaliados.
+
+* Todo subconjunto de um conjunto frequente é frequente:
+	* Se {A,B,C} é frequente, então {A,B} é frequente;
+* Todo conjunto que contém um subconjunto não frequente também não é frequente:
+	* Se {A,B} não é frequente, então {A,B,C} não é frequente.
+
+Exemplo:
+
+![Estratégia Apriori](apriori.png)
+
+Fase de junção, seguida da fase de poda do *Apriori*:
+
+![Estratégia Apriori](juncaoPoda.png)
