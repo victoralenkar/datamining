@@ -290,7 +290,8 @@ Aproximadamente 63,2% da base original ocorre em cada amostra.
 aleatório dos atributos disponíveis, de tamanho F (outro parâmetro de entrada
 da técnica), e apenas esses atributos serão candidatos a rotular o nó corrente.
 
-**ATENÇÃO**: Em caso de regressão, a saída é a média dos valores de saída das árvores.
+**ATENÇÃO**: Em caso de regressão, a saída é a média dos valores de saída das
+árvores.
 
 ### Desvangatens
 
@@ -324,8 +325,8 @@ vizinhos.*
 ### Cálculo de Proximidade / Semelhança
 
 > A proximidade ou semelhança é definida a partir de uma métrica de distância,
-como a distância euclidiana. Outras função de distância podem ser utilizadas: distância
-de manhanttan, distância minkowski, etc.
+como a distância euclidiana. Outras função de distância podem ser utilizadas:
+distância de manhanttan, distância minkowski, etc.
 
 ![Distância Euclidiana](distEuclid.png)
 
@@ -458,9 +459,8 @@ X = {X1, X2, ..., Xn}, são os atributos de X.
 Como P(X | Ci) se trata de um produtório, qualquer probabilidade zero 
 pode zerar o resultado geral. Assim aplica-se a correção de laplace:
 
-Suponha que para a classe buys-computer=yes,
-em uma base de treinamento de 1000 tuplas,
-tem-se 0 tuplas com age<=30, 990 tuplas com age=31..40,
+Suponha que para a classe buys-computer=yes, em uma base de treinamento 
+de 1000 tuplas, tem-se 0 tuplas com age<=30, 990 tuplas com age=31..40,
 e 10 tuplas com age>40.
 
 Adiciona-se uma tupla com a classe buys-computer=yes
@@ -653,3 +653,23 @@ Porém, a regra envolvendo a generalização calçado-social pode ser relevante.
 ```
 {calça-social} => {calçado-social}
 ```
+
+### Regras de Associação Quantitativas (Relacionais ou Multidimensionais)
+
+> Regras de associação quantitativas são utilizadas quando se deseja minerar 
+padrões em bases de dados relacionais (formadas por atributos quantitativos 
+e atributos categóricos).
+
+Tabelas = Relações
+
+Atributos = dimensões
+
+![Relações vs Atributos](tabela.png)
+
+Exemplo:
+```
+(sexo="M") ∧ (20 ≤ idade ≤ 30) ∧ (opção-sex="heterossex") ⇒ (usuário-drogas="S")
+```
+
+Esta regra indica, com confiança C, que pacientes portadores do HIV, heterossexuais,
+entre 20 e 30 anos, do sexo masculino têm C% de chance de serem usuários de drogas.
