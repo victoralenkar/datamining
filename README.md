@@ -471,3 +471,78 @@ Dessa forma, as probabilidades que seriam:
 
 passam a ser:
 1/1003=0,001; 991/1003=0,988 e 11/1003=0,011.
+
+## Aula 7: Avaliação de Classificadores
+
+### Procedimentos Básicos
+
+- Dividir a base de dados em:
+	- base de treinamento; e
+	- base de teste.
+	
+- Calcular acurácia (taxa de acerto): 
+```
+total_acertos/total_base_teste
+```
+
+- Calcular taxa de erro (classificações erradas): 
+```
+total_erros/total_base_teste
+```
+
+### Particionamentos
+
+* Hold out
+	* 2/3 para treinamento;
+	* 1/3 para teste.
+	
+* Random subsampling
+	* Hold out executado k vezes;
+	* Acurácia obtida a partir da média das acurácias das k execuções.
+	
+* k-Fold Cross Validation
+	* Base particionada em k partições aleatórias do mesmo tamanho (aproximadamente);
+	* Treinamento e teste executados k vezes;
+	* Em cada execução:
+		* 1 partição de teste; e
+		* k-1 partições de treinamento.
+	* Todas as partições são usadas para teste em algum momento; e
+	* Acurácia = total_acerto/total_base_dados.
+	
+* Stratified Cross-Validation
+	* Cada partição utilizada na técnica k-fold cross validation deve possuir a 
+mesma distribuição de classes da base original.
+
+* Leave-one-Out
+	- Mesmo que k-fold cross validation quando k é o número de instância da base 
+de dados.
+
+### Erros
+
+* Erro de Generalização
+	* Medido a partir da base de teste (a partir de elementos não vistos 
+	previamente), indica a capacidade de generalização do modelo.
+
+* Erro de Treinamento
+	* Medido a partir da base utilizada para treinar o modelo.
+	
+### Overfitting vs Underfitting
+
+- Overfitting:
+	- Ocorre quando o modelo se ajusta bem aos dados de treino, mas não possui 
+capacidade de generalização, ou seja, quando o erro de treino é baixo e o de 
+generalização é alto;
+	- O modelo “decora” os dados de treinamento e não consegue aprender a partir 
+deles.
+- Underfitting
+	- Ocorre quando o modelo sequer se ajusta bem aos dados de treino.
+	
+### Matriz de Confusão
+
+Caso geral:
+
+![Matriz de Confusão](matrizConfusao.png)
+
+Em caso de classe binária:
+
+![Matriz de Confusão](binario.png)
