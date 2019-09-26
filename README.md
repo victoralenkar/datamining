@@ -582,3 +582,39 @@ do meio representa pontos onde a taxa de TP é igual à de FP.
 Área utilizada para comparar diferentes ROC Curves:
 
 ![AUC](auc.png)
+
+## Aula 8: Regras de Associação
+
+### Definição
+
+Uma regra de associação representa um padrão de relacionamento entre itens de 
+dados de um domínio de aplicação que ocorre com uma determinada frequência na 
+base de dados.
+
+```
+{candidíase} => {pneumonia}
+{café, leite} => {pão, manteiga, queijo}
+```
+
+**IMPORTANTE**: O elemento da esquerda da regra chama-se antecedente e o da
+direita, consequente.
+
+### Suporte
+
+> O suporte de uma regra \{X} => \{Y} é definido pela porcentagem de transações
+que incluem todos os itens do conjunto X U Y.
+
+Representa a franção das transações que satisfazem tanto o antecedente quanto o
+consequente. *Indica a relevância da regra.*
+
+### Confiança
+
+> A confiança de uma regra \{X} => \{Y} é definido pela porcentagem de transações 
+que incluem os itens X e Y em relação a todas que incluem os itens de X.
+
+Representa o grau de satisfatibilidade do consequente,
+em relação às transações que incluem o antecedente.
+
+*Representa a probabilidade do consequente acontecer
+dado que o antecedente aconteceu.*
+
