@@ -906,3 +906,31 @@ o processo para o próximo grupo...
 - Identificar cluster de diferentes formatos;
 - Poucos parâmetros de entrada; e
 - Tratamento de ruídos.
+
+## Aula 11: Padrões Sequenciais
+
+> Padrões Sequenciais são sequências ordenadas de eventos que aparecem com 
+significativa frequência em uma base de dados.
+
+Exemplo:
+
+![](seq.png)
+
+**ATENÇÃO:** Os elementos de uma subsequência não precisam aparecer consecutivamente 
+na sequência de transações do consumidor, mas devem aparecer na mesma ordem.
+
+* O tamanho da sequência é determinado pelo total de itens;
+* Em uma sequência, o mesmo item pode aparecer em eventos diferentes, mas não 
+repetido em um mesmo evento.
+
+### Algoritmo GSP
+
+> Baseado em propriedade semelhante àquela utilizada na construção do Apriori:
+
+* "Toda subsequência de uma sequência frequente também é frequente";
+* "Se uma sequência não é frequente, então as sequências que a contém também não são";
+* Mesma estrutura de iteração do *Apriori*:
+	* Primeira fase: união. Sequências frequentes de tamanho k-1 geram
+candidatas de tamanho k.
+	* Segunda fase: poda. São podadas todas as candidatas c ∈ Ck, que possuem
+alguma subsequência de tamanho k-1 não contidas em Fk-1.
